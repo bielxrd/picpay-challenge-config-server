@@ -8,6 +8,13 @@ spring:
           uri: https://github.com/bielxrd/picpay-challenge-config-files
           search-paths: /picpay-challenge
           username: bielxrd
-          password: 
+          password:
           clone-on-start: true
           default-label: release
+  application:
+    name: picpay-challenge-config-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
